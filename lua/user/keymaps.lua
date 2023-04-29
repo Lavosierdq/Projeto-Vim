@@ -37,6 +37,7 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
+-- Navegar entre buffers Shift + l e h
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
@@ -46,10 +47,12 @@ keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
+-- no modo Visual Shift + > ou < para mexer o texto para esquerda ou direita
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
+-- no modo Visual Shift + j ou k para mexer o texto para cima  ou para baixo
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
