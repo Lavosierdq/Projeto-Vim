@@ -27,7 +27,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
-keymap("n", "<leader>e", ":Lex 10<cr>", opts)
+keymap("n", "<leader>e", ":Lex <cr>", opts)
 
 -- Resize with arrows
 -- Redefinir as janelas com Control + Arrows
@@ -43,6 +43,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
+-- Aperte j+k juntos para voltar para o modo normal
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
