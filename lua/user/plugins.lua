@@ -17,10 +17,10 @@ end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
+augroup packer_user_config
+autocmd!
+autocmd BufWritePost plugins.lua source <afile> | PackerSync
+augroup end
 ]]
 
 -- Use a protected call so we don't error out on first use
@@ -45,18 +45,27 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use 'wakatime/vim-wakatime'
+  -- esquema de cores para Nvim
+  use "lunarvim/darkplus.nvim"
+  use 'folke/tokyonight.nvim'
+  use "lunarvim/Onedarker.nvim"
+
+
+
   use {
     'wthollingsworth/pomodoro.nvim',
     requires = 'MunifTanjim/nui.nvim',
     config = function()
-        require('pomodoro').setup({
-            time_work = 30,
-            time_break_short = 5,
-            time_break_long = 20,
-            timers_to_long_break = 4
-        })
+      require('pomodoro').setup({
+        time_work = 30,
+        time_break_short = 5,
+        time_break_long = 20,
+        timers_to_long_break = 4
+      })
     end
   }
+
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
