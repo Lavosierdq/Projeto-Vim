@@ -27,7 +27,13 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
-keymap("n", "<F3>", ":Lex 18<cr>", opts)
+keymap("n", "<F5>", ":split<CR>", opts)
+keymap("n", "<F6>", ":vsplit<CR>", opts)
+ --noremap <Leader>,h:<C-u>split<CR>
+ --noremap <Leader>,v :<C-u>vsplit<CR>
+
+
+
 
 -- Resize with arrows
 -- Redefinir as janelas com Control + Arrows

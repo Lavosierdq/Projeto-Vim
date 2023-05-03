@@ -44,33 +44,20 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+
+  -- esquema de incones
+  use 'nvim-tree/nvim-web-devicons'
+  use 'nvim-lualine/lualine.nvim'
+  use 'nvim-tree/nvim-tree.lua'
+ 
   
   -- esquema de cores para Nvim
   use "lunarvim/darkplus.nvim"
   use 'folke/tokyonight.nvim'
   use "lunarvim/Onedarker.nvim"
 
-    -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-nvim-lua"
-
-    -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-
-  -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/mason.nvim" -- simple to use language server installer
-  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-  use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
-
-
-  use 'wakatime/vim-wakatime'  
+  
+  use 'wakatime/vim-wakatime'
   use {
     'wthollingsworth/pomodoro.nvim',
     requires = 'MunifTanjim/nui.nvim',
