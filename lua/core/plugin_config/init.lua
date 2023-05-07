@@ -6,4 +6,5 @@ require ("core.plugin_config.treesitter")
 require ("core.plugin_config.lsp_config")
 require ("core.plugin_config.completation")
 require ("core.plugin_config.indentation_lines")
-
+require ("core.plugin_config.bufferline_config")
+require ("core.plugin_config.auto-pairs_config")

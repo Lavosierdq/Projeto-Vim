@@ -63,17 +63,27 @@ return packer.startup(function(use)
 
   -- esquema de incones
   use 'nvim-tree/nvim-web-devicons'
+
+  -- buffer e barra de baixo da tela
+  use{'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use 'nvim-lualine/lualine.nvim'
+
+  -- Árvore de dados e explorador de arquivos
   use 'nvim-tree/nvim-tree.lua'
+
   -- esquema de cores para Nvim
   use "lunarvim/darkplus.nvim"
   use 'folke/tokyonight.nvim'
   use "lunarvim/Onedarker.nvim"
+
   -- esquema para cores de identação
   use "lukas-reineke/indent-blankline.nvim"
 
+  -- auto pairs e substituição de caracteres
+  use 'tpope/vim-surround'
+  use 'windwp/nvim-autopairs'
+
  -- esquema de contagem de tempo para  
- --
   use 'wakatime/vim-wakatime'
   use {
     'wthollingsworth/pomodoro.nvim',
