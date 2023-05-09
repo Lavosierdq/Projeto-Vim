@@ -83,6 +83,9 @@ return packer.startup(function(use)
   use 'tpope/vim-surround'
   use 'windwp/nvim-autopairs'
 
+  -- adicionando função para edição de texto
+  use 'matze/vim-move'
+
  -- esquema de contagem de tempo para  
   use 'wakatime/vim-wakatime'
   use {
