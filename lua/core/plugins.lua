@@ -86,6 +86,8 @@ return packer.startup(function(use)
   -- adicionando função para edição de texto
   use 'matze/vim-move'
 
+  -- adicionando função para usar terminal
+  use 'voldikss/vim-floaterm'
  -- esquema de contagem de tempo para  
   use 'wakatime/vim-wakatime'
   use {

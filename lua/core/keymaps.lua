@@ -21,6 +21,15 @@ vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
 -- Identar e corrigir Texto
 vim.cmd([[ let g:move_key_modifier = 'C' ]])
 
+-- abrir terminal
+vim.cmd([[nnoremap   <silent>   <F9>   :FloatermToggle<CR>]])
+vim.cmd([[tnoremap   <silent>   <F9>   <C-\><C-n>:FloatermToggle<CR>]])
+vim.cmd([[inoremap   <silent>   <F9>   <C-\><C-n>:FloatermToggle<CR>]])
+
+
+
+
+
 -- --------------------------------------------------------------------------
 
 --Remap space as leader key

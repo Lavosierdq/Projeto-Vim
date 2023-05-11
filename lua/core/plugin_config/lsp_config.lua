@@ -33,27 +33,32 @@ require("lspconfig").lua_ls.setup {
         },
       },
     },
-  } 
-}
+  }
+} 
 
 require("lspconfig").clangd.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  capabilities = capabilities, 
 }
 
 require("lspconfig").solargraph.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 require("lspconfig").html.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 require("lspconfig").tsserver.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 require("lspconfig").cssls.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 
